@@ -1,0 +1,20 @@
+# Chinese Calligraphy Manifold (Phase 1)
+
+An unsupervised 3D Autoencoder that learns the geometry of Chinese handwriting (Chinese MNIST).
+
+## Features
+* **3D Latent Space:** Visualizes 15 distinct character classes in a rotating 3D swarm.
+* **Unsupervised Physics:** Uses Variance Expansion + Reconstruction Loss to organize clusters without labels.
+* **Morph Engine:** A "Hallucination Mode" that interpolates between characters (e.g., morphing "One" to "Three").
+* **Custom Driver:** Handles the `Chinese MNIST` dataset structure from Kaggle.
+
+## Setup
+1. Download data from [Kaggle: Chinese MNIST](https://www.kaggle.com/datasets/gpreda/chinese-mnist).
+2. Extract to `./data` so you have `data/chinese_mnist.csv` and `data/data/input_...jpg`.
+3. Run `python main_classifier.py`.
+
+## Controls
+* **Left Click:** Select Start Character (Green).
+* **Right Click:** Select End Character (Red).
+* **Space:** Reset Selection.
+* **Mouse Drag:** Rotate 3D View.
